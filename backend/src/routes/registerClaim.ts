@@ -2,11 +2,11 @@ import { Request, Response } from "express"
 import { PrismaClient } from "../../src/generated/prisma";
 const prisma = new PrismaClient()
 
-const registerClaim = (req : Request, res : Response)=>{
+const registerClaim = async(req : Request, res : Response)=>{
     const { id } = req.body
     try{
         const point = Math.floor(Math.random()*10+1);
-        const history = prisma.$transaction([
+        const createClaim =await prisma.$transaction([
             prisma.user.update({
                 data : {
                     point : {
