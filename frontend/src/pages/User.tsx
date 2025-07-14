@@ -1,5 +1,5 @@
 export default function UserPage(){
-    return(<div>
+    return(<div className="min-h-screen">
         User
     </div>)
 }

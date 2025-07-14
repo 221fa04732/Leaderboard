@@ -1,5 +1,5 @@
 export default function HistoryPage(){
-    return(<div>
+    return(<div className="min-h-screen">
         History
     </div>)
 }
