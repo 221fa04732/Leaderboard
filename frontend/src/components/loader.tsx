@@ -6,7 +6,7 @@ export default function Loader() {
             behavior: 'smooth'
         });
     }
-    return (<div className="w-full min-h-screen flex flex-col justify-center items-center bg-gray-950 text-white">
+    return (<div className="w-full min-h-screen flex flex-col justify-start items-center bg-gray-950 text-white">
         <div className="w-full">
             {[...Array(5)].map((_, i) => (
                 <div key={i} className="p-4 rounded-lg bg-slate-800/50 animate-pulse mb-2">
